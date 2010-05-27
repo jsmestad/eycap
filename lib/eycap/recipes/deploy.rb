@@ -15,7 +15,8 @@ Capistrano::Configuration.instance(:must_exist).load do
       run <<-CMD
         cd #{latest_release} &&
         ln -nfs #{shared_path}/config/database.yml #{latest_release}/config/database.yml &&
-        ln -nfs #{shared_path}/config/mongrel_cluster.yml #{latest_release}/config/mongrel_cluster.yml
+        ln -nfs #{shared_path}/config/mongrel_cluster.yml #{latest_release}/config/mongrel_cluster.yml &&
+        ln -nfs #{shared_path}/config/mongo.yml #{latest_release}/config/mongo.yml
       CMD
     end
 
