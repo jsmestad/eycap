@@ -1,3 +1,6 @@
+== 0.5.6 / 2010-6-11
+  * Added automigrate script
+
 == 0.5.5 / 2009-3-16
   * fixed 2 bugs that are in 0.5.4 with the SSL and bundler recipes
 	* use this version with bundler version 0.9.2
